@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/CarlosSimon02/front-end-challenges/tree/main/frontendmentor/results-summary-component-main](https://github.com/CarlosSimon02/front-end-challenges/tree/main/frontendmentor/results-summary-component-main)
-- Live Site URL: [https://illustrious-pithivier-eb80c1.netlify.app/](https://illustrious-pithivier-eb80c1.netlify.app/)
+- Live Site URL: [https://fem-result-summary-component.netlify.app/](https://fem-result-summary-component.netlify.app/)
 
 ## My process
 
