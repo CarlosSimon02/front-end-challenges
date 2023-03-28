@@ -24,6 +24,10 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+body > div > div {
+    text-align: center;
+}
+
 .card {
     width: 100vw;
 }
@@ -186,14 +190,36 @@ button:active {
     background-image: linear-gradient(to bottom, var(--color-grad-result-top), var(--color-grad-result-bot));
 }
 
-@media (min-width: 450px) {
+.attribution {
+    margin-top: 20px;
+}
+
+.attribution > a {
+    color: var(--color-grad-result-bot);
+    font-weight: 700;
+}
+
+.attribution > a:active {
+    color: var(--color-grad-result-top);
+}
+
+@media (max-width: 375px) {
     .card {
-        width: 450px;
-        position: absolute;
-        border-radius: 32px;
+        width: 375px;
+    }
+}
+
+@media (min-width: 450px) {
+    body > div {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        position: absolute;
+    }
+
+    .card {
+        width: 450px;
+        border-radius: 32px;
         box-shadow: 10px 10px 50px hsla(240, 97%, 87%, 0.418);
     }
 
@@ -202,7 +228,7 @@ button:active {
     }
 
     @media (max-height: 803px) {
-        .card {
+        body > div {
             position: absolute;
             top: 0;
             transform: translate(-50%,0);
@@ -210,15 +236,19 @@ button:active {
     }
 }
 
+
 @media (min-width: 800px) {
+    body > div {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
     .card {
         display: grid;
         width: 736px;
         height: 510px;
         grid-template-columns: 50% 50%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
     }
 
     .card section {
@@ -282,7 +312,7 @@ button:active {
     }
 
     @media (max-height: 510px) {
-        .card {
+        body > div {
             position: absolute;
             top: 0;
             transform: translate(-50%,0);
